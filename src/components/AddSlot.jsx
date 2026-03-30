@@ -28,22 +28,22 @@ const AddSlot = () => {
         }
     }
     return (
-        <div className='h-full w-full m-3'>
-            <h3 className='text-2xl font-bold'> Add Slot </h3>
-            <form className='m-3 w-1/2' onSubmit={(e) => handleSubmit(e)}>
+        <div className='h-1/2 w-1/3 m-3 border border-gray-400 mx-auto shadow'>
+            <h3 className='text-2xl font-bold text-center text-blue-500 mt-2'> Add Slot </h3>
+            <form className='m-3 w-full' onSubmit={(e) => handleSubmit(e)}>
                 <label htmlFor=""> Date: </label>
-                <input type="date" className='border w-1/2 p-2 m-3'
+                <input type="date" className='border w-3/4 p-2 m-3'
                     value={slotDate.date} onChange={(e) => setSlotDate({ ...slotDate, date: e.target.value })}
                 /> <br />
                 <label htmlFor=""> Start Time: </label>
-                <input type="time" className='border w-1/2 p-2 m-3'
+                <input type="time" className='border w-3/4 p-2 m-3'
                     value={slotDate.startTime} onChange={(e) => setSlotDate({ ...slotDate, startTime: e.target.value })}
                 /> <br />
                 <label htmlFor=""> End Time: </label>
-                <input type="time" className='border w-1/2 p-2 m-3'
+                <input type="time" className='border w-3/4 p-2 m-3'
                     value={slotDate.endTime} onChange={(e) => setSlotDate({ ...slotDate, endTime: e.target.value })}
                 /> <br />
-                <button className='p-2 m-3 w-1/2 bg-green-500 text-white'> Submit </button>
+                <button className='p-2 m-3 w-3/4 bg-green-500 text-white'> Submit </button>
             </form>
         </div>
     )
